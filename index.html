@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
 		<title>Reserva tu hotel</title>
 	</head>
 	<body>
 		<div id="app"></div>
-
-		<script src="./components/App.js/"></script>
 		<!-- Development scripts -->
 		<script
 			crossorigin
@@ -18,13 +17,34 @@
 			crossorigin
 			src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
 		></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
-		<script src="./scripts/data.js" type="text/babel"></script>
-		<script src="./scripts/app.js" type="text/babel"></script>
-		<script src="./components/Main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+		<script src="./scripts/data.js" type="text/babel" defer></script>
+		<script src="./scripts/helpers.js" type="text/babel" defer></script>
+		<script src="./components/Error.js" type="text/babel" defer></script>
+		<script src="./components/Filters.js" type="text/babel" defer></script>
+		<script src="./components/GridItemProp.js" type="text/babel" defer></script>
+		<script
+			src="./components/PriceItemProp.js"
+			type="text/babel"
+			defer
+		></script>
+		<script
+			src="./components/HotelGridItem.js"
+			type="text/babel"
+			defer
+		></script>
+		<script src="./components/HotelGrid.js" type="text/babel" defer></script>
+		<script src="./components/Header.js" type="text/babel" defer></script>
+		<script src="./components/Main.js" type="text/babel" defer></script>
+		<script
+			src="./scripts/app.js"
+			type="text/babel"
+			data-pluguins="transform-es2015-modules-umd"
+			defer
+		></script>
 		<!-- Production scripts -->
 		<!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>-->
-	</body>
+		--></body>
 </html>

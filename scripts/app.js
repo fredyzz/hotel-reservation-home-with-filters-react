@@ -1,4 +1,4 @@
-ReactDom.render(
+ReactDOM.render(
 	<React.StrictMode>
 		<Main />
 	</React.StrictMode>,

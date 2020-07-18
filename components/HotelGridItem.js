@@ -5,6 +5,7 @@ const HotelGridItem = ({ hotel }) => {
 				className="hotelGridItem__img"
 				src={hotel.photo}
 				alt={`${hotel.name}, imagen`}
+				width="300"
 				loading="lazy"
 			/>
 
@@ -24,6 +25,9 @@ const HotelGridItem = ({ hotel }) => {
 					text={`${hotel.rooms} habitaciones`}
 				/>
 				<PriceItemProp price={hotel.price} />
+			</div>
+			<div className="hotelGridItem__button">
+				<a href="#">reservar</a>
 			</div>
 		</div>
 	)

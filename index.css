@@ -79,7 +79,7 @@ b {
 .main {
 	background-color: var(--main-bg-color);
 	display: flexbox;
-	width: 100%;
+	width: 100vw;
 }
 
 .header {
@@ -89,8 +89,23 @@ b {
 	padding: 40px 30px;
 }
 
-.header .dates p {
+.logo {
 	display: inline-block;
+	width: 80px;
+	padding-right: 10px;
+}
+
+.logo img h1 {
+	display: inline-block;
+}
+
+.header .dates {
+	display: inline-block;
+	vertical-align: super;
+}
+
+.header .dates p {
+	display: inline;
 	margin-right: 5px;
 }
 
@@ -102,25 +117,45 @@ b {
 	background-color: var(--secondary-bg-color);
 	color: var(--secondary-txt-color);
 	width: 100%;
-	padding: 10px 30px;
+	padding: 5px 30px;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .filters__control {
-	display: inline-block;
 	box-sizing: border-box;
-	width: 180px;
-	height: 36px;
-	padding: 8px;
-	margin: 10px;
+	width: 200px;
+	height: 40px;
+	padding: 10px 10px 10px 35px;
+	margin: 5px;
+	text-align-last: center;
 	border-radius: 10px;
 	border: none;
+	background-color: var(--select-bg-color);
 	text-transform: uppercase;
+	font-size: 12px;
 }
 
 .filters__control:focus {
-	background-color: var(--select-bg-color);
+	background-color: var(--main-bg-color);
 	outline: none;
+}
+
+.filter__control {
+	display: inline-block;
+}
+
+.input-icons i {
+	position: absolute;
+}
+
+.input-icons {
+	width: 100%;
+}
+
+.i-icon {
+	padding: 15px 0px 15px 15px;
+	width: 20px;
+	color: black;
 }
 
 .errors {
@@ -164,6 +199,32 @@ b {
 	margin-bottom: 14px;
 }
 
+.hotelGridItem__button {
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-txt-color);
+	height: 60px;
+	border-radius: 0 0 20px 20px;
+	vertical-align: middle;
+}
+
+.hotelGridItem__button a {
+	background-color: var(--secondary-bg-color);
+	color: var(--secondary-txt-color);
+	height: 40px;
+	display: block;
+	border-radius: 0 0 20px 20px;
+	text-align: center;
+	padding-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.hotelGridItem__button a:hover {
+	background-color: var(--select-bg-color);
+	color: var(--primary-bg-color);
+	font-weight: 600;
+}
+
 .prop__icon {
 	display: inline-block;
 	width: 24px;
@@ -194,8 +255,25 @@ b {
 	vertical-align: middle;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.header {
-		background-color: blue;
+		padding: 15px 30px;
+	}
+
+	.hotelGrid {
+		width: 100%;
+		padding: 30px 0 30px 0;
+		text-align: center;
+	}
+
+	.hotelGridItem {
+		margin: 10px 20px 0 0;
+	}
+
+	.filters__control {
+		width: 80vw;
+		height: 30px;
+		padding: 6px 6px 6px 50px;
+		margin-bottom: 6px;
 	}
 }

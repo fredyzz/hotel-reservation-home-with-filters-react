@@ -2,6 +2,7 @@
 // En una aplicación convencional estos datos provendrían desde un back-end pero a los fines de este ejercicio utilizaremos variables pre-definidas.
 // Utilizamos fechas dinámicas para que la aplicación siempre muestre un rango de días entre la fecha actual y el futuro.
 
+//Date helpers
 const today = new Date(new Date().setHours(0, 0, 0, 0))
 const tomorrow = new Date(today.valueOf() + 86400000)
 const todayPlusTwoMonths = new Date(today.valueOf() + 5259500000)
@@ -29,6 +30,7 @@ const monthDictionary = [
 	'noviembre',
 	'diciembre'
 ]
+//Hotels Data
 const hotelsData = [
 	{
 		slug: 'la-bamba-de-areco',

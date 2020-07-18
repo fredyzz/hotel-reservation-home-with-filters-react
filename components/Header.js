@@ -15,10 +15,15 @@ const Header = ({ initDate, finishDate }) => {
 
 	return (
 		<div className="header">
-			<div>
-				<h1>Hoteles</h1>
+			<div className="logo">
+				<img
+					src="./components/static/images/hoteles-logo.png"
+					alt="hoteles logo"
+					width="70"
+				/>
 			</div>
 			<div className="dates">
+				<h1>Hoteles</h1>
 				<p>
 					Desde el{' '}
 					<span>{`${initDay}, ${initDayNumber} de ${initMonth} `}</span>

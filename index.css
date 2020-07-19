@@ -260,6 +260,11 @@ b {
 		padding: 15px 30px;
 	}
 
+	.header .dates p {
+		display: block;
+		margin-right: 5px;
+	}
+
 	.hotelGrid {
 		width: 100%;
 		padding: 30px 0 30px 0;
